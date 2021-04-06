@@ -6,26 +6,26 @@ import 'package:cbs_architecture/data/utils/app_logger_util.dart';
 
 class AppBlocObserver extends BlocObserver {
   @override
-  void onTransition(Bloc bloc, Transition transition) {
-    AppLoggerUtil.d('$bloc => $transition');
-    super.onTransition(bloc, transition);
-  }
-
-  @override
-  void onChange(Cubit cubit, Change change) {
-    // AppLoggerUtil.d('$cubit => $change');
-    super.onChange(cubit, change);
-  }
-
-  @override
   void onEvent(Bloc bloc, Object event) {
     // AppLoggerUtil.d('onEvent: $bloc => $event');
     super.onEvent(bloc, event);
   }
 
   @override
-  void onError(Cubit cubit, Object error, StackTrace stackTrace) {
-    AppLoggerUtil.d('$cubit => $error');
-    super.onError(cubit, error, stackTrace);
+  void onError(BlocBase bloc, Object error, StackTrace stackTrace) {
+    AppLoggerUtil.d('$bloc => $error');
+    super.onError(bloc, error, stackTrace);
+  }
+
+  @override
+  void onTransition(Bloc bloc, Transition transition) {
+    AppLoggerUtil.d('$bloc => $transition');
+    super.onTransition(bloc, transition);
+  }
+
+  @override
+  void onChange(BlocBase bloc, Change change) {
+    // AppLoggerUtil.d('$bloc => $change');
+    super.onChange(bloc, change);
   }
 }

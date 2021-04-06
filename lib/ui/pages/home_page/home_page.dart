@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: BlocBuilder<NumberBloc, NumberState>(
-        cubit: RootService.appBloc.numberBloc,
+        bloc: RootService.appBloc.numberBloc,
         builder: (context, state) {
           return Column(
             mainAxisAlignment: MainAxisAlignment.center,
