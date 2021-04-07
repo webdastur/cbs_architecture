@@ -15,6 +15,8 @@ import 'package:cbs_architecture/data/services/root_service.dart';
 Future main() async {
   // Initializing core services
   WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
+
   Bloc.observer = AppBlocObserver();
   await Hive.initFlutter();
   await RootService.init();
