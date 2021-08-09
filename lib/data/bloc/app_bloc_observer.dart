@@ -2,13 +2,13 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 // 🌎 Project imports:
-import 'package:cbs_architecture/data/utils/app_logger_util.dart';
+import 'package:aliftech_task/data/utils/app_logger_util.dart';
 
 class AppBlocObserver extends BlocObserver {
   @override
-  void onEvent(Bloc bloc, Object event) {
+  void onEvent(Bloc? bloc, Object? event) {
     // AppLoggerUtil.d('onEvent: $bloc => $event');
-    super.onEvent(bloc, event);
+    super.onEvent(bloc!, event);
   }
 
   @override

@@ -6,10 +6,10 @@ import 'package:get_it/get_it.dart';
 import 'package:hive/hive.dart';
 
 // 🌎 Project imports:
-import 'package:cbs_architecture/data/localization/locale_keys.g.dart';
+import 'package:aliftech_task/data/localization/locale_keys.g.dart';
 
 class HiveService {
-  Box _box;
+  late Box _box;
   static Future init() async {
     final getIt = GetIt.instance;
 

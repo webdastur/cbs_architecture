@@ -8,9 +8,9 @@ import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 // 🌎 Project imports:
-import 'package:cbs_architecture/app.dart';
-import 'package:cbs_architecture/data/bloc/app_bloc_observer.dart';
-import 'package:cbs_architecture/data/services/root_service.dart';
+import 'package:aliftech_task/app.dart';
+import 'package:aliftech_task/data/bloc/app_bloc_observer.dart';
+import 'package:aliftech_task/data/services/root_service.dart';
 
 Future main() async {
   // Initializing core services

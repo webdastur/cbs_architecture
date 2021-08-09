@@ -5,10 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 // 🌎 Project imports:
-import 'package:cbs_architecture/data/services/root_service.dart';
-import 'package:cbs_architecture/data/utils/app_route_util.dart';
-import 'package:cbs_architecture/ui/pages/home_page/home_page.dart';
-import 'package:cbs_architecture/data/localization/locale_keys.g.dart';
+import 'package:aliftech_task/data/services/root_service.dart';
+import 'package:aliftech_task/data/utils/app_route_util.dart';
+import 'package:aliftech_task/ui/pages/home_page/home_page.dart';
+import 'package:aliftech_task/data/localization/locale_keys.g.dart';
 
 class App extends StatelessWidget {
   @override
@@ -19,6 +19,7 @@ class App extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      debugShowCheckedModeBanner: false,
       locale: context.locale,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,

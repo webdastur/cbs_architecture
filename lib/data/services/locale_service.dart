@@ -6,7 +6,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:get_it/get_it.dart';
 
 // 🌎 Project imports:
-import 'package:cbs_architecture/data/services/root_service.dart';
+import 'package:aliftech_task/data/services/root_service.dart';
 
 class LocaleService {
   static Future init() async {
@@ -18,7 +18,7 @@ class LocaleService {
 
   Future create() async {}
 
-  void changeLocale({BuildContext context, Locale locale}) {
+  void changeLocale({required BuildContext context, required Locale locale}) {
     context.locale = locale;
     RootService.hiveService.setLang(locale);
   }
